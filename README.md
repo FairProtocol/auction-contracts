@@ -194,9 +194,14 @@ The generated signatures will be uploaded to your pinata account. Currently in o
   * DepositAndPlaceOrder: 0xDDeFBcF94d46E771dad74882012704f51CA15ed8
   * AllowListOffChainManaged: 0xE0AD16EB7Ea467C694E6cFdd5E7D61FE850e8B53
 
-* Base:
+* Base Mainnet:
   * EasyAuction: 0xcAe780DdD607C2081fbB4654E719f77F5e8907BF
   * DepositAndPlaceOrder: 0x7bd070D175988C9FF97AcCD61170b65a52e2263D
+  * AllowListOffChainManaged: 0xE0AD16EB7Ea467C694E6cFdd5E7D61FE850e8B53
+
+* Base Goerli:
+  * EasyAuction: 0x231F3Fd7c3E3C9a2c8A03B72132c31241DF0a26C
+  * DepositAndPlaceOrder: 0xBDf182cB6a78E43c95F0F3cC11201cf561830368
   * AllowListOffChainManaged: 0xE0AD16EB7Ea467C694E6cFdd5E7D61FE850e8B53
 
 ## Audit
