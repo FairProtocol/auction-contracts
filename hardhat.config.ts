@@ -207,6 +207,26 @@ export default {
           )
         : "auto",
     },
+    "base-mainnet": {
+      ...sharedNetworkConfig,
+      chainId: 8453,
+      url: "https://mainnet.base.org",
+      gasPrice: GAS_PRICE_GWEI
+        ? parseInt(
+            utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString(),
+          )
+        : "auto",
+    },
+    "base-goerli": {
+      ...sharedNetworkConfig,
+      chainId: 84531,
+      url: "https://goerli.base.org",
+      gasPrice: GAS_PRICE_GWEI
+        ? parseInt(
+            utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString(),
+          )
+        : "auto",
+    },
   },
   namedAccounts: {
     deployer: 0,
