@@ -95,6 +95,8 @@ export async function getWETH9Address(
     weth9Address = "0x4200000000000000000000000000000000000006";
   } else if (chainId == 84531) {
     weth9Address = "0x4200000000000000000000000000000000000006";
+  } else if (chainId == 10200) {
+    weth9Address = "0x014A442480DbAD767b7615E55E271799889FA1a7";
   }
   return weth9Address;
 }
