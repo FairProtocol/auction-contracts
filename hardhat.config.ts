@@ -152,6 +152,15 @@ export default {
           )
         : "auto",
     },
+    chiado: {
+      ...sharedNetworkConfig,
+      url: "https://rpc.chiadochain.net",
+      gasPrice: GAS_PRICE_GWEI
+        ? parseInt(
+            utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString(),
+          )
+        : "auto",
+    },
     polygon: {
       ...sharedNetworkConfig,
       url: "https://polygon-rpc.com",

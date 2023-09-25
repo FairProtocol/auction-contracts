@@ -144,10 +144,15 @@ The generated signatures will be uploaded to your pinata account. Currently in o
   * DepositAndPlaceOrder: 0x10D15DEA67f7C95e2F9Fe4eCC245a8862b9B5B96
   * AllowListOffChainManaged: 0x0F4648d997e486cE06577d6Ee2FecBcA84b834F4
 
-* Gnosis:
+* Gnosis (xDAI):
   * EasyAuction: 0x0b7fFc1f4AD541A4Ed16b40D8c37f0929158D101
   * DepositAndPlaceOrder: 0x845AbED0734e39614FEC4245F3F3C88E2da98157
   * AllowListOffChainManaged: 0x0F4648d997e486cE06577d6Ee2FecBcA84b834F4
+
+* Chiado (xDAI Testnet):
+  * EasyAuction: 0x231F3Fd7c3E3C9a2c8A03B72132c31241DF0a26C
+  * DepositAndPlaceOrder: 0x37de709f24DA722D77281dD0D8b25D7896326f44
+  * AllowListOffChainManaged: 0xE0AD16EB7Ea467C694E6cFdd5E7D61FE850e8B53
 
 * Polygon:
   * EasyAuction: 0x0b7fFc1f4AD541A4Ed16b40D8c37f0929158D101
