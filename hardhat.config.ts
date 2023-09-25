@@ -10,6 +10,7 @@ import { clearAuction } from "./src/tasks/clear_auction";
 import { clearAuctionSimplified } from "./src/tasks/clear_auction_simplifed";
 import { deployEasyAuctionContract } from "./src/tasks/deployAuction";
 import { deployVerifier } from "./src/tasks/deployVerifier";
+import { flattenCode } from "./src/tasks/flat";
 import { generateSignatures } from "./src/tasks/generateSignatures";
 import { initiateAuction } from "./src/tasks/initiate_new_auction";
 import { placeManyOrders } from "./src/tasks/placeManyOrders";
@@ -65,6 +66,7 @@ generateSignatures();
 placeManyOrders();
 deployEasyAuctionContract();
 deployVerifier();
+flattenCode();
 
 export default {
   paths: {
