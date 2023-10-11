@@ -209,6 +209,15 @@ The generated signatures will be uploaded to your pinata account. Currently in o
   * DepositAndPlaceOrder: 0xBDf182cB6a78E43c95F0F3cC11201cf561830368
   * AllowListOffChainManaged: 0xE0AD16EB7Ea467C694E6cFdd5E7D61FE850e8B53
 
+* zkSync Era Testnet:
+  * EasyAuction: 0x1EddE05b1205Bf9E336B8e8Cf33674EE3FD7b18B
+  * DepositAndPlaceOrder: 0x25D0d1642ea6Ba7284BC12fE2e4d6a4b57c0Dc55
+  * AllowListOffChainManaged: 0x4B70AC1C00a220a39B03782Cb79D54556Efb8C6E
+
+* zkSync Era Mainnet:
+  * EasyAuction: 0xef6007C1f933EA2CE68c2385646e5F9F88Bd7a53
+  * DepositAndPlaceOrder: 0xC8FEF8fcE092bA7c07a7dD791F1ACD812a48D947
+  * AllowListOffChainManaged: 0x1730C3221C69A332E4DbFbfdD22f16fd887a00C7
 ## Audit
 
 The solidity code was audited by Adam Kolar, from the G0 Group. The report can be found [here](https://github.com/g0-group/Audits/blob/master/GnosisAuctionFeb2021.pdf) and [here](https://github.com/g0-group/Audits/blob/master/GnosisAuctionMar2021.pdf).

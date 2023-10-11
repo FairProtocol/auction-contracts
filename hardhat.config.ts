@@ -5,6 +5,8 @@ import dotenv from "dotenv";
 import { utils } from "ethers";
 import type { HttpNetworkUserConfig } from "hardhat/types";
 import yargs from "yargs";
+import "@matterlabs/hardhat-zksync-deploy";
+import "@matterlabs/hardhat-zksync-solc";
 
 import { clearAuction } from "./src/tasks/clear_auction";
 import { clearAuctionSimplified } from "./src/tasks/clear_auction_simplifed";
@@ -36,12 +38,14 @@ const {
   PINATA_JWT,
 } = process.env;
 
-export { PINATA_KEY, PINATA_SECRET, PINATA_JWT };
+export { PINATA_KEY, PINATA_SECRET, PINATA_JWT, PK };
 
 const DEFAULT_MNEMONIC =
   "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat";
 
-const sharedNetworkConfig: HttpNetworkUserConfig = {};
+const sharedNetworkConfig: HttpNetworkUserConfig = {
+  zksync: false,
+};
 if (PK) {
   sharedNetworkConfig.accounts = [PK];
 } else {
@@ -74,6 +78,10 @@ export default {
     cache: "build/cache",
     deploy: "src/deploy",
     sources: "contracts",
+  },
+  zksolc: {
+    version: "latest",
+    settings: {},
   },
   solidity: {
     compilers: [
@@ -237,6 +245,19 @@ export default {
             utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString(),
           )
         : "auto",
+    },
+    zkSync: {
+      ...sharedNetworkConfig,
+      chainId: 324,
+      url: "https://mainnet.era.zksync.io",
+      zksync: true,
+    },
+    zkSyncTestnet: {
+      ...sharedNetworkConfig,
+      chainId: 280,
+      url: "https://testnet.era.zksync.dev",
+      ethNetwork: "goerli",
+      zksync: true,
     },
   },
   namedAccounts: {
